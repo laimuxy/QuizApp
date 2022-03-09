@@ -18,7 +18,7 @@ def about():
 @app.route('/test',methods = ['POST', 'GET'])
 def test():
   parametri = ["IQ", "augums", "izmers"]
-    return render_template("test.html", parametri=parametri)
+  return render_template("test.html", parametri=parametri)
 
 #Pārbaudes lapa, lai saprastu, ka kods vispār strādā
 @app.route('/health')
