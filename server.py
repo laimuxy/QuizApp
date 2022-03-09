@@ -14,6 +14,10 @@ def root():
 def about():
     return render_template("about.html")
 
+@app.route('/test',methods = ['POST', 'GET'])
+def test():
+    return render_template("test.html")
+
 #Pārbaudes lapa, lai saprastu, ka kods vispār strādā
 @app.route('/health')
 def health():
